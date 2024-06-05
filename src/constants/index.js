@@ -87,7 +87,7 @@ export const projects = [
 		name: 'Amazon Price Tracker',
 		description:
 			'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-		link: 'https://github.com/adrianhajdin/pricewise',
+		link: null,
 	},
 	{
 		iconUrl: threads,
@@ -95,6 +95,6 @@ export const projects = [
 		name: 'Full Stack Threads Clone',
 		description:
 			'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-		link: 'https://github.com/adrianhajdin/threads',
+		link: null,
 	},
 ]
