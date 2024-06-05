@@ -24,7 +24,7 @@ const Projects = () => {
 				</p>
 			</div>
 			<div className="flex flex-wrap my-20 gap-16">
-				{/* {projects.map((project) => (
+				{projects.map((project) => (
 					<div className="lg:w-[400px] w-full" key={project.name}>
 						<div className="block-container w-12 h-12">
 							<div
@@ -62,9 +62,7 @@ const Projects = () => {
 							</div>
 						</div>
 					</div>
-				))} */}
-
-				<p>Coming Soon</p>
+				))}
 			</div>
 			<hr className="border-slate-200" />
 			<CTA />
