@@ -68,88 +68,100 @@ const Contact = () => {
 	}
 
 	return (
-		<section className="relative flex lg:flex-row flex-col max-container">
+		<section className="flex flex-col max-container">
 			{/* <AlertComponent {...alert} /> */}
-			{alert?.show && <AlertComponent {...alert} />}
-			<div className="flex-1 min-w-[50%] flex flex-col ">
-				<h1 className="head-text">Get in Touch</h1>
-				<form
-					className="w-full flex flex-col gap-7 mt-14"
-					onSubmit={handleSubmit}
-					ref={formRef}
-				>
-					<label className="text-black-500 font-semibold">
-						Name
-						<input
-							type="text"
-							name="name"
-							className="input"
-							placeholder="John Doe"
-							required
-							value={form.name}
-							onChange={handleChange}
-							onFocus={handleFocus}
-							onBlur={handleBlur}
-						/>
-					</label>
-					<label className="text-black-500 font-semibold">
-						Email
-						<input
-							type="email"
-							name="email"
-							className="input"
-							placeholder="johm@gmail.com"
-							required
-							value={form.email}
-							onChange={handleChange}
-							onFocus={handleFocus}
-							onBlur={handleBlur}
-						/>
-					</label>
-					<label className="text-black-500 font-semibold">
-						Your Message
-						<textarea
-							name="message"
-							className="textarea"
-							rows={4}
-							placeholder="Let me know how I can help you!"
-							required
-							value={form.message}
-							onChange={handleChange}
-							onFocus={handleFocus}
-							onBlur={handleBlur}
-						/>
-					</label>
-					<button
-						type="submit"
-						className="btn"
-						disabled={isLoading}
-						onFocus={handleFocus}
-						onBlur={handleBlur}
-					>
-						{isLoading ? 'Sending...' : 'Send Message'}
-					</button>
-				</form>
+			<div className="mb-32">
+				<h1 className="head-text">
+					My <span className="blue-gradient_text">Socials</span>
+				</h1>
+				<div className="mt-5">
+					<p>Coming Soon</p>
+				</div>
 			</div>
-			<div className="lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]">
-				<Canvas
-					camera={{
-						near: 0.1,
-						far: 1000,
-					}}
-					frameloop="always"
-				>
-					<directionalLight intensity={2} position={[0, 0, 1]} />
-					<ambientLight intensity={0.2} />
-					<Suspense fallback={<Loader />}>
-						<Fox
-							position={[0.5, 0.35, 0]}
-							rotation={[12.6, -0.6, 0]}
-							scale={[0.6, 0.6, 0.6]}
-							currentAnimation={currentAnimation}
-						/>
-					</Suspense>
-				</Canvas>
+			<div className="relative flex flex-1 lg:flex-row flex-col gap-5">
+				{alert?.show && <AlertComponent {...alert} />}
+				<div className="flex-1 min-w-[50%] flex flex-col ">
+					<h1 className="head-text">
+						Get in <span className="blue-gradient_text">Touch</span>
+					</h1>
+					<form
+						className="w-full flex flex-col gap-7 mt-5"
+						onSubmit={handleSubmit}
+						ref={formRef}
+					>
+						<label className="text-black-500 font-semibold">
+							Name
+							<input
+								type="text"
+								name="name"
+								className="input"
+								placeholder="John Doe"
+								required
+								value={form.name}
+								onChange={handleChange}
+								onFocus={handleFocus}
+								onBlur={handleBlur}
+							/>
+						</label>
+						<label className="text-black-500 font-semibold">
+							Email
+							<input
+								type="email"
+								name="email"
+								className="input"
+								placeholder="johm@gmail.com"
+								required
+								value={form.email}
+								onChange={handleChange}
+								onFocus={handleFocus}
+								onBlur={handleBlur}
+							/>
+						</label>
+						<label className="text-black-500 font-semibold">
+							Your Message
+							<textarea
+								name="message"
+								className="textarea"
+								rows={4}
+								placeholder="Let me know how I can help you!"
+								required
+								value={form.message}
+								onChange={handleChange}
+								onFocus={handleFocus}
+								onBlur={handleBlur}
+							/>
+						</label>
+						<button
+							type="submit"
+							className="btn"
+							disabled={isLoading}
+							onFocus={handleFocus}
+							onBlur={handleBlur}
+						>
+							{isLoading ? 'Sending...' : 'Send Message'}
+						</button>
+					</form>
+				</div>
+				<div className="w-full lg:h-auto md:h-[550px] h-[350px]">
+					<Canvas
+						camera={{
+							near: 0.1,
+							far: 1000,
+						}}
+						frameloop="always"
+					>
+						<directionalLight intensity={2} position={[0, 0, 1]} />
+						<ambientLight intensity={0.2} />
+						<Suspense fallback={<Loader />}>
+							<Fox
+								position={[0.5, 0.35, 0]}
+								rotation={[12.6, -0.6, 0]}
+								scale={[0.6, 0.6, 0.6]}
+								currentAnimation={currentAnimation}
+							/>
+						</Suspense>
+					</Canvas>
+				</div>
 			</div>
 		</section>
 		// <div>jio</div>
