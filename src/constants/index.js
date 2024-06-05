@@ -8,6 +8,20 @@ import {
 	tailwindcss,
 	mongodb,
 	html,
+	git,
+	python,
+	aws,
+	sass,
+	c,
+	cpp,
+	express,
+	linux,
+	graphql,
+	csharp,
+	reactquery,
+	unity,
+	unreal,
+	firebase,
 } from '../assets/icons'
 import { starbucks, tesla } from '../assets/images'
 
@@ -23,8 +37,18 @@ export const skills = [
 		type: 'Frontend',
 	},
 	{
+		imageUrl: reactquery,
+		name: 'React Query',
+		type: 'Frontend',
+	},
+	{
 		imageUrl: tailwindcss,
 		name: 'Tailwind CSS',
+		type: 'Frontend',
+	},
+	{
+		imageUrl: sass,
+		name: 'Sass',
 		type: 'Frontend',
 	},
 	{
@@ -40,7 +64,67 @@ export const skills = [
 	{
 		imageUrl: nodejs,
 		name: 'Node.js',
-		type: 'Frontend',
+		type: 'Backend',
+	},
+	{
+		imageUrl: express,
+		name: 'Express.js',
+		type: 'Backend',
+	},
+	{
+		imageUrl: python,
+		name: 'Python',
+		type: 'Backend',
+	},
+	{
+		imageUrl: c,
+		name: 'C',
+		type: 'Backend',
+	},
+	{
+		imageUrl: cpp,
+		name: 'C++',
+		type: 'Backend',
+	},
+	{
+		imageUrl: csharp,
+		name: 'C#',
+		type: 'Backend',
+	},
+	{
+		imageUrl: graphql,
+		name: 'GraphQL',
+		type: 'Backend',
+	},
+	{
+		imageUrl: aws,
+		name: 'AWS',
+		type: 'Cloud',
+	},
+	{
+		imageUrl: firebase,
+		name: 'Firebase',
+		type: 'Cloud',
+	},
+	{
+		imageUrl: git,
+		name: 'Git',
+		type: 'Tools',
+	},
+	{
+		imageUrl: linux,
+		name: 'Linux',
+		type: 'Tools',
+	},
+	{
+		imageUrl: unity,
+		name: 'Unity',
+		type: 'Others',
+	},
+	{
+		imageUrl: unreal,
+		name: 'Unreal Engine',
+		type: 'Others',
 	},
 	{
 		imageUrl: mongodb,

@@ -36,6 +36,9 @@ const About = () => {
 									className="w-1/2 h-1/2 object-contain"
 								/>
 							</div>
+							<div className="hover-text  btn-back-black text-center rounded-md">
+								<p className="text-white">{skill.name}</p>
+							</div>
 						</div>
 					))}
 				</div>

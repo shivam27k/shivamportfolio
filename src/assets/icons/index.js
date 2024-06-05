@@ -26,34 +26,58 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import python from './python.svg'
+import aws from './aws.svg'
+import c from './c.svg'
+import cpp from './cpp.svg'
+import flutter from './flutter.svg'
+import linux from './linux.svg'
+import reactquery from './reactquery.svg'
+import graphql from './graphql.svg'
+import csharp from './csharp.svg'
+import unity from './unity.svg'
+import unreal from './unreal.svg'
+import firebase from './firebase.svg'
 
 export {
-    css,
-    express,
-    git,
-    github,
-    html,
-    javascript,
-    mongodb,
-    motion,
-    mui,
-    nextjs,
-    nodejs,
-    react,
-    redux,
-    sass,
-    tailwindcss,
-    typescript,
-    linkedin,
-    twitter,
-    car,
-    estate,
-    pricewise,
-    snapgram,
-    summiz,
-    threads,
-    arrow,
-    contact,
-    soundon,
-    soundoff
+	css,
+	express,
+	git,
+	github,
+	html,
+	javascript,
+	mongodb,
+	motion,
+	mui,
+	nextjs,
+	nodejs,
+	react,
+	redux,
+	sass,
+	tailwindcss,
+	typescript,
+	linkedin,
+	twitter,
+	car,
+	estate,
+	pricewise,
+	snapgram,
+	summiz,
+	threads,
+	arrow,
+	contact,
+	soundon,
+	soundoff,
+	python,
+	aws,
+	c,
+	cpp,
+	flutter,
+	linux,
+	reactquery,
+	graphql,
+	csharp,
+	unity,
+	unreal,
+	firebase,
 }
