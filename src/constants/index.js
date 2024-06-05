@@ -23,7 +23,7 @@ import {
 	unreal,
 	firebase,
 } from '../assets/icons'
-import { starbucks, tesla } from '../assets/images'
+import { qrusible } from '../assets/images'
 
 export const skills = [
 	{
@@ -136,30 +136,32 @@ export const skills = [
 export const experiences = [
 	{
 		id: 0,
-		title: 'React.js Developer',
-		company_name: 'Starbucks',
-		icon: starbucks,
-		iconBg: '#accbe1',
-		date: 'March 2020 - April 2021',
+		title: 'Software Developer',
+		company_name: 'Qrusible',
+		icon: qrusible,
+		iconBg: '#fbc3bc',
+		date: 'Aug 2023 - May 2024',
 		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
+			'Revamped outdated code, boosting system performance, efficiency, and robustness for more reliability.',
+			'Transformed admin panel with creative data display, enhanced navigation, and streamlined profile comparison.',
+			'Introduced a comprehensive points system in the web app, boosting user engagement by 40%.',
+			'Developed a web-app using React Native & AWS with GraphQL for scalable data management.',
+			'Led re-development of a cross-platform web app with React Native and GlueStack, enhancing UX with optimized architecture and responsive design.',
+			' Directed the full lifecycle of a product, including UI design backend architecture with AWS for data storage, and utilized GraphQL to form table and their relations.',
 		],
 	},
 	{
 		id: 1,
-		title: 'React Native Developer',
-		company_name: 'Tesla',
-		icon: tesla,
+		title: 'Data Engineer Intern',
+		company_name: 'Qrusbile',
+		icon: qrusible,
 		iconBg: '#fbc3bc',
-		date: 'Jan 2021 - Feb 2022',
+		date: 'May 2023 - Aug 2023',
 		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
+			'Automated transcript extraction, saving 80-90% time, and mapped extracted data to AWS DynamoDB.',
+			'Co-developed React Native app with AWS, real-time sync, and revamped UI/UX for better user experience.',
+			'Developed a Resume Converter using PyPDF2 & OpenAI API, mapping extracted data to DynamoDB.',
+			'Integrated Google Sheets with AWS DynamoDB using Node.js, Express, and GraphQL, with an intuitive UI for data manipulation.',
 		],
 	},
 ]
