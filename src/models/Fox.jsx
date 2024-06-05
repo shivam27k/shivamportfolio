@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
-// import { Globals } from '@react-spring/dre'
 import scene from '../assets/3d/fox.glb'
 
 const Fox = ({ currentAnimation, ...props }) => {

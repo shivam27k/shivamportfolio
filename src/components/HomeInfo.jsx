@@ -3,7 +3,7 @@ import { arrow } from '../assets/icons'
 
 const InfoBox = ({ text, link, btnText }) => {
 	return (
-		<div className="info-box  w-1/4">
+		<div className="info-box lg:w-[500px] ">
 			<p className="font-medium sm:text-xl text-center">{text}</p>
 			<Link to={link} className="neo-brutalism-white neo-btn border-2">
 				{btnText}

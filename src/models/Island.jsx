@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unknown-property */
 import { useRef, useEffect } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useFrame, useThree } from '@react-three/fiber'
@@ -103,6 +102,9 @@ const Island = ({ isRotating, setCurrentStage, setIsRotating, ...props }) => {
 		canvas.addEventListener('pointerdown', handlePointerDown)
 		canvas.addEventListener('pointermove', handlePointerMove)
 		canvas.addEventListener('pointerup', handlePointerUp)
+		canvas.addEventListener('touchstart', handlePointerDown)
+		canvas.addEventListener('touchmove', handlePointerMove)
+		canvas.addEventListener('touchend', handlePointerUp)
 		document.addEventListener('keydown', handleKeyDown)
 		document.addEventListener('keyup', handleKeyUp)
 
@@ -110,6 +112,9 @@ const Island = ({ isRotating, setCurrentStage, setIsRotating, ...props }) => {
 			canvas.removeEventListener('pointerdown', handlePointerDown)
 			canvas.removeEventListener('pointermove', handlePointerMove)
 			canvas.removeEventListener('pointerup', handlePointerUp)
+			canvas.removeEventListener('touchstart', handlePointerDown)
+			canvas.removeEventListener('touchmove', handlePointerMove)
+			canvas.removeEventListener('touchend', handlePointerUp)
 			document.removeEventListener('keydown', handleKeyDown)
 			document.removeEventListener('keyup', handleKeyUp)
 		}

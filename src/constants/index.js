@@ -1,4 +1,14 @@
-import { typescript, react, pricewise, threads } from '../assets/icons'
+import {
+	typescript,
+	react,
+	pricewise,
+	threads,
+	nodejs,
+	nextjs,
+	tailwindcss,
+	mongodb,
+	html,
+} from '../assets/icons'
 import { starbucks, tesla } from '../assets/images'
 
 export const skills = [
@@ -11,6 +21,31 @@ export const skills = [
 		imageUrl: react,
 		name: 'React JS',
 		type: 'Frontend',
+	},
+	{
+		imageUrl: tailwindcss,
+		name: 'Tailwind CSS',
+		type: 'Frontend',
+	},
+	{
+		imageUrl: html,
+		name: 'HTML',
+		type: 'Frontend',
+	},
+	{
+		imageUrl: nextjs,
+		name: 'Next.js',
+		type: 'Frontend',
+	},
+	{
+		imageUrl: nodejs,
+		name: 'Node.js',
+		type: 'Frontend',
+	},
+	{
+		imageUrl: mongodb,
+		name: 'MongoDB',
+		type: 'Database',
 	},
 ]
 
