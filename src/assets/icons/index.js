@@ -44,8 +44,16 @@ import globe from './globe.svg'
 import game from './game.svg'
 import data from './data.svg'
 import book from './book.svg'
+import extension from './extension.svg'
+import nodewhite from './node.svg'
+import grocery from './grocery.svg'
+import loop from './loop.svg'
 
 export {
+	loop,
+	grocery,
+	nodewhite,
+	extension,
 	book,
 	data,
 	game,
