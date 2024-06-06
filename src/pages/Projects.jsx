@@ -1,4 +1,4 @@
-import { arrow } from '../assets/icons'
+import { arrow, globe } from '../assets/icons'
 import CTA from '../components/CTA'
 import { projects } from '../constants'
 import { Link } from 'react-router-dom'
@@ -38,10 +38,24 @@ const Projects = () => {
 								/>
 							</div>
 						</div>
-						<div className="mt-5 flex flex-col">
-							<h4 className="text-2xl font-poppins font-semibold">
-								{project.name}
-							</h4>
+						<div className="mt-5 flex flex-col justify-between">
+							<div className="flex flex-row items-center gap-4">
+								<h4 className="text-2xl font-poppins font-semibold">
+									{project.name}
+								</h4>
+								{project.deploymentLink && (
+									<a
+										href={project.deploymentLink}
+										target="_blank"
+									>
+										<img
+											src={globe}
+											alt="arrow"
+											className="w-6 h-6 object-contain"
+										/>
+									</a>
+								)}
+							</div>
 							<p className="mt-2 text-slate-500 ">
 								{project.description}
 							</p>

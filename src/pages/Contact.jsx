@@ -6,6 +6,7 @@ import Loader from '../components/Loader'
 
 import useAlert from '../hooks/useAlert'
 import AlertComponent from '../components/AlertComponent'
+import { socialLinks } from '../constants'
 
 const Contact = () => {
 	const formRef = useRef(null)
@@ -74,8 +75,30 @@ const Contact = () => {
 				<h1 className="head-text">
 					My <span className="blue-gradient_text">Socials</span>
 				</h1>
-				<div className="mt-5">
-					<p>Coming Soon</p>
+				<div className="mt-5 flex flex-col gap-3 text-slate-500">
+					<p>Contact me anywhere anytime you want!</p>
+				</div>
+				<div className="mt-16 flex flex-wrap gap-12">
+					{socialLinks.map((social) => (
+						<a
+							href={social.link}
+							key={social.name}
+							target="_blank"
+							className="block-container w-20 h-20"
+						>
+							<div className="btn-back rounded-xl" />
+							<div className="btn-front rounded-xl flex justify-center items-center">
+								<img
+									src={social.icon}
+									alt={social.name}
+									className="w-1/2 h-1/2 object-contain"
+								/>
+							</div>
+							<div className="hover-text  btn-back-black text-center rounded-md">
+								<p className="text-white">{social.name}</p>
+							</div>
+						</a>
+					))}
 				</div>
 			</div>
 			<div className="relative flex flex-1 lg:flex-row flex-col gap-5">
@@ -84,6 +107,9 @@ const Contact = () => {
 					<h1 className="head-text">
 						Get in <span className="blue-gradient_text">Touch</span>
 					</h1>
+					<div className="mt-5 flex flex-col gap-3 text-slate-500">
+						<p>Write me an email</p>
+					</div>
 					<form
 						className="w-full flex flex-col gap-7 mt-5"
 						onSubmit={handleSubmit}

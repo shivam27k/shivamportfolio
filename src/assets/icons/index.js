@@ -38,8 +38,15 @@ import csharp from './csharp.svg'
 import unity from './unity.svg'
 import unreal from './unreal.svg'
 import firebase from './firebase.svg'
+import instagram from './instagram.svg'
+import shoppingcart from './shoppingcart.svg'
+import globe from './globe.svg'
+import game from './game.svg'
 
 export {
+	game,
+	globe,
+	shoppingcart,
 	css,
 	express,
 	git,
@@ -80,4 +87,5 @@ export {
 	unity,
 	unreal,
 	firebase,
+	instagram,
 }

@@ -7,6 +7,7 @@ import { experiences, skills } from '../constants'
 import CTA from '../components/CTA'
 
 const About = () => {
+	const experienceReversed = [...experiences].reverse()
 	return (
 		<section className="max-container">
 			<h1 className="head-text">
@@ -27,7 +28,10 @@ const About = () => {
 				<h3 className="subhead-text">My Skills</h3>
 				<div className="mt-16 flex flex-wrap gap-12">
 					{skills.map((skill) => (
-						<div className="block-container w-20 h-20">
+						<div
+							key={skill.name}
+							className="block-container w-20 h-20"
+						>
 							<div className="btn-back rounded-xl" />
 							<div className="btn-front rounded-xl flex justify-center items-center">
 								<img
@@ -56,7 +60,7 @@ const About = () => {
 					</div>
 					<div className="mt-12 flex">
 						<VerticalTimeline>
-							{experiences.map((experience) => (
+							{experienceReversed.map((experience) => (
 								<VerticalTimelineElement
 									key={`${experience.id}`}
 									date={experience.date}
