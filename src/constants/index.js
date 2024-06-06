@@ -1,8 +1,6 @@
 import {
 	typescript,
 	react,
-	pricewise,
-	threads,
 	nodejs,
 	nextjs,
 	tailwindcss,
@@ -22,6 +20,14 @@ import {
 	unity,
 	unreal,
 	firebase,
+	github,
+	linkedin,
+	twitter,
+	instagram,
+	shoppingcart,
+	game,
+	data,
+	book,
 } from '../assets/icons'
 import { qrusible } from '../assets/images'
 
@@ -136,6 +142,20 @@ export const skills = [
 export const experiences = [
 	{
 		id: 0,
+		title: 'Data Engineer Intern',
+		company_name: 'Qrusbile',
+		icon: qrusible,
+		iconBg: '#fbc3bc',
+		date: 'May 2023 - Aug 2023',
+		points: [
+			'Automated transcript extraction, saving 80-90% time, and mapped extracted data to AWS DynamoDB.',
+			'Co-developed React Native app with AWS, real-time sync, and revamped UI/UX for better user experience.',
+			'Developed a Resume Converter using PyPDF2 & OpenAI API, mapping extracted data to DynamoDB.',
+			'Integrated Google Sheets with AWS DynamoDB using Node.js, Express, and GraphQL, with an intuitive UI for data manipulation.',
+		],
+	},
+	{
+		id: 1,
 		title: 'Software Developer',
 		company_name: 'Qrusible',
 		icon: qrusible,
@@ -150,37 +170,70 @@ export const experiences = [
 			' Directed the full lifecycle of a product, including UI design backend architecture with AWS for data storage, and utilized GraphQL to form table and their relations.',
 		],
 	},
+]
+
+export const socialLinks = [
+	{
+		id: 0,
+		name: 'GitHub',
+		icon: github,
+		link: 'https://github.com/shivam27k',
+	},
 	{
 		id: 1,
-		title: 'Data Engineer Intern',
-		company_name: 'Qrusbile',
-		icon: qrusible,
-		iconBg: '#fbc3bc',
-		date: 'May 2023 - Aug 2023',
-		points: [
-			'Automated transcript extraction, saving 80-90% time, and mapped extracted data to AWS DynamoDB.',
-			'Co-developed React Native app with AWS, real-time sync, and revamped UI/UX for better user experience.',
-			'Developed a Resume Converter using PyPDF2 & OpenAI API, mapping extracted data to DynamoDB.',
-			'Integrated Google Sheets with AWS DynamoDB using Node.js, Express, and GraphQL, with an intuitive UI for data manipulation.',
-		],
+		name: 'LinkedIn',
+		icon: linkedin,
+		link: 'https://www.linkedin.com/in/shivam-27k/',
+	},
+	{
+		id: 2,
+		name: 'X',
+		icon: twitter,
+		link: 'https://x.com/shivam2701k',
+	},
+	{
+		id: 3,
+		name: 'Instagram',
+		icon: instagram,
+		link: 'https://x.com/shivam2701k',
 	},
 ]
 
 export const projects = [
 	{
-		iconUrl: pricewise,
-		theme: 'btn-back-red',
-		name: 'Amazon Price Tracker',
+		iconUrl: game,
+		theme: 'btn-back-green',
+		name: 'Land of the Dead',
 		description:
-			'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-		link: null,
+			'An offline 3-D action-adventure game designed to provide players with a thrilling and immersive experience.',
+		link: 'https://github.com/shivam27k/Land-of-the-Dead',
+		deploymentLink: null,
 	},
 	{
-		iconUrl: threads,
-		theme: 'btn-back-green',
-		name: 'Full Stack Threads Clone',
+		iconUrl: data,
+		theme: 'btn-back-yellow',
+		name: 'US Accidents Data Analysis',
 		description:
-			'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-		link: null,
+			'Analyzing US accident data to uncover trends, causes, and patterns for improved road safety and policy-making.',
+		link: 'https://github.com/shivam27k/US-Accidents-DA',
+		deploymentLink: null,
+	},
+	{
+		iconUrl: shoppingcart,
+		theme: 'btn-back-red',
+		name: 'A Template Website',
+		description:
+			'A store website template with smooth navigation, animations, and sections for customer reviews, team introductions, and contact.',
+		link: 'https://github.com/shivam27k/Regular-Store-Website',
+		deploymentLink: 'https://shivam27k.github.io/Regular-Store-Website/',
+	},
+	{
+		iconUrl: book,
+		theme: 'btn-back-pink',
+		name: 'MouseTrap - A Book Store',
+		description:
+			'A book store containing a list of books and their details, with reviews, helping users to buy books accordingly.',
+		link: 'https://github.com/shivam27k/MouseTrap',
+		deploymentLink: 'https://shivam27k.github.io/MouseTrap/index.html',
 	},
 ]

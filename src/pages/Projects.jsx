@@ -1,4 +1,4 @@
-import { arrow } from '../assets/icons'
+import { arrow, globe } from '../assets/icons'
 import CTA from '../components/CTA'
 import { projects } from '../constants'
 import { Link } from 'react-router-dom'
@@ -24,7 +24,7 @@ const Projects = () => {
 				</p>
 			</div>
 			<div className="flex flex-wrap my-20 gap-16">
-				{/* {projects.map((project) => (
+				{projects.map((project) => (
 					<div className="lg:w-[400px] w-full" key={project.name}>
 						<div className="block-container w-12 h-12">
 							<div
@@ -38,10 +38,24 @@ const Projects = () => {
 								/>
 							</div>
 						</div>
-						<div className="mt-5 flex flex-col">
-							<h4 className="text-2xl font-poppins font-semibold">
-								{project.name}
-							</h4>
+						<div className="mt-5 flex flex-col justify-between">
+							<div className="flex flex-row items-center gap-4">
+								<h4 className="text-2xl font-poppins font-semibold">
+									{project.name}
+								</h4>
+								{project.deploymentLink && (
+									<a
+										href={project.deploymentLink}
+										target="_blank"
+									>
+										<img
+											src={globe}
+											alt="arrow"
+											className="w-6 h-6 object-contain"
+										/>
+									</a>
+								)}
+							</div>
 							<p className="mt-2 text-slate-500 ">
 								{project.description}
 							</p>
@@ -62,9 +76,7 @@ const Projects = () => {
 							</div>
 						</div>
 					</div>
-				))} */}
-
-				<p>Coming Soon</p>
+				))}
 			</div>
 			<hr className="border-slate-200" />
 			<CTA />
