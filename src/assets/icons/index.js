@@ -42,8 +42,12 @@ import instagram from './instagram.svg'
 import shoppingcart from './shoppingcart.svg'
 import globe from './globe.svg'
 import game from './game.svg'
+import data from './data.svg'
+import book from './book.svg'
 
 export {
+	book,
+	data,
 	game,
 	globe,
 	shoppingcart,

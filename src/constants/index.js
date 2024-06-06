@@ -1,7 +1,6 @@
 import {
 	typescript,
 	react,
-	pricewise,
 	nodejs,
 	nextjs,
 	tailwindcss,
@@ -27,6 +26,8 @@ import {
 	instagram,
 	shoppingcart,
 	game,
+	data,
+	book,
 } from '../assets/icons'
 import { qrusible } from '../assets/images'
 
@@ -209,6 +210,15 @@ export const projects = [
 		deploymentLink: null,
 	},
 	{
+		iconUrl: data,
+		theme: 'btn-back-yellow',
+		name: 'US Accidents Data Analysis',
+		description:
+			'Analyzing US accident data to uncover trends, causes, and patterns for improved road safety and policy-making.',
+		link: 'https://github.com/shivam27k/US-Accidents-DA',
+		deploymentLink: null,
+	},
+	{
 		iconUrl: shoppingcart,
 		theme: 'btn-back-red',
 		name: 'A Template Website',
@@ -216,5 +226,14 @@ export const projects = [
 			'A store website template with smooth navigation, animations, and sections for customer reviews, team introductions, and contact.',
 		link: 'https://github.com/shivam27k/Regular-Store-Website',
 		deploymentLink: 'https://shivam27k.github.io/Regular-Store-Website/',
+	},
+	{
+		iconUrl: book,
+		theme: 'btn-back-pink',
+		name: 'MouseTrap - A Book Store',
+		description:
+			'A book store containing a list of books and their details, with reviews, helping users to buy books accordingly.',
+		link: 'https://github.com/shivam27k/MouseTrap',
+		deploymentLink: 'https://shivam27k.github.io/MouseTrap/index.html',
 	},
 ]
