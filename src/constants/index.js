@@ -28,6 +28,10 @@ import {
 	game,
 	data,
 	book,
+	extension,
+	nodewhite,
+	grocery,
+	loop,
 } from '../assets/icons'
 import { qrusible } from '../assets/images'
 
@@ -210,17 +214,54 @@ export const projects = [
 		deploymentLink: null,
 	},
 	{
+		iconUrl: grocery,
+		theme: 'btn-back-red',
+		name: 'Grocer-E',
+		description:
+			'Grocer-e is an app for users to order online groceries from their nearby stores and get them delivered to their doorstep.',
+		link: 'https://github.com/shivam27k/grocer_e',
+		deploymentLink: null,
+	},
+	{
+		iconUrl: loop,
+		theme: 'btn-back-blue',
+		name: 'Looper',
+		description:
+			'Looper is a showcase of my abilities and skills in frontend. It contains a website with smooth animations and transitions.',
+		link: 'https://github.com/shivam27k/Looper',
+		deploymentLink: 'https://shivam27k.github.io/Looper/',
+	},
+	{
+		iconUrl: extension,
+		theme: 'btn-back-black',
+		name: 'Leads Tracker',
+		description:
+			'Leads Tracker is a simple but handy Chrome extension that allows users to save URLs for easy access later.',
+		link: 'https://github.com/shivam27k/LeadsTracker',
+		deploymentLink: null,
+	},
+	{
 		iconUrl: data,
 		theme: 'btn-back-yellow',
 		name: 'US Accidents Data Analysis',
 		description:
 			'Analyzing US accident data to uncover trends, causes, and patterns for improved road safety and policy-making.',
 		link: 'https://github.com/shivam27k/US-Accidents-DA',
+		deploymentLink:
+			'https://drive.google.com/file/d/1Wh1vdqheCzF0W40Iuu2xKLRz-XGF39RU/view?usp=sharing',
+	},
+	{
+		iconUrl: nodewhite,
+		theme: 'btn-back-red',
+		name: 'Product Management API',
+		description:
+			'This Node.js application serves as an API for managing products. It allows users to perform CRUD operations on products.',
+		link: 'https://github.com/shivam27k/node-api-productmanagement',
 		deploymentLink: null,
 	},
 	{
 		iconUrl: shoppingcart,
-		theme: 'btn-back-red',
+		theme: 'btn-back-orange',
 		name: 'A Template Website',
 		description:
 			'A store website template with smooth navigation, animations, and sections for customer reviews, team introductions, and contact.',
