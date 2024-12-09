@@ -31,9 +31,9 @@ import {
 	extension,
 	nodewhite,
 	grocery,
-	loop,
+	loop, nestjs
 } from '../assets/icons'
-import { qrusible } from '../assets/images'
+import { qrusible, patrikaLogo } from '../assets/images'
 
 export const skills = [
 	{
@@ -74,6 +74,11 @@ export const skills = [
 	{
 		imageUrl: nodejs,
 		name: 'Node.js',
+		type: 'Backend',
+	},
+	{
+		imageUrl: nestjs,
+		name: 'NestJs',
 		type: 'Backend',
 	},
 	{
@@ -173,6 +178,22 @@ export const experiences = [
 			'Led re-development of a cross-platform web app with React Native and GlueStack, enhancing UX with optimized architecture and responsive design.',
 			' Directed the full lifecycle of a product, including UI design backend architecture with AWS for data storage, and utilized GraphQL to form table and their relations.',
 		],
+	},
+	{
+		id: 2,
+		title: 'Software Developer',
+		company_name: 'Rajasthan Patrika',
+		icon: patrikaLogo,
+		iconBg: '#f9e79f',
+		date: 'Aug 2024 - Present',
+		points: [
+			"Fixed a long-standing issue with web stories by converting them to AMP pages, boosting visibility on Google Discover and increasing monthly views by 107% (from less than 100k to 1.7M).",
+			"Improved SEO for Patrika.com, addressing indexability issues, optimizing titles and descriptions, and structuring social metadata, leading to enhanced search rankings and visibility.",
+			"Independently developed a scalable ePaper platform for 3.5M+ users using Next.js for the frontend, NestJS middleware to integrate APIs, and AWS Amplify with DynamoDB for user data management.",
+			"Made a login system using AWS Cognito, enabling user authentication and profile management.",
+			"Enhanced the ePaper with features like a crop tool, user profiles, ad integration, and dynamic access to state editions via a NestJS API fetching data from WordPress.",
+			"Replaced an expensive 3rd-party service, saving crores of rupees annually through an in-house solution."
+		]
 	},
 ]
 

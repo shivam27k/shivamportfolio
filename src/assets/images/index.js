@@ -5,5 +5,6 @@ import starbucks from './starbucks.png'
 import tesla from './tesla.png'
 import logo from './logo.svg'
 import qrusible from './qrusible.png'
+import patrikaLogo from './patrika-logo.svg'
 
-export { hero, meta, shopify, starbucks, tesla, logo, qrusible }
+export { hero, meta, shopify, starbucks, tesla, logo, qrusible, patrikaLogo }

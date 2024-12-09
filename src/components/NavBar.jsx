@@ -32,6 +32,7 @@ const NavBar = () => {
 			<nav className="flex text-lg gap-7 font-medium">
 				<NavLinkComponent path="/about" title="About" />
 				<NavLinkComponent path="/projects" title="Projects" />
+				<NavLinkComponent path="/contact" title="Contact Me" />
 			</nav>
 		</header>
 	)

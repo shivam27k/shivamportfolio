@@ -48,8 +48,10 @@ import extension from './extension.svg'
 import nodewhite from './node.svg'
 import grocery from './grocery.svg'
 import loop from './loop.svg'
+import nestjs from './nestjs.svg'
 
 export {
+	nestjs,
 	loop,
 	grocery,
 	nodewhite,
