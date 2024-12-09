@@ -181,7 +181,7 @@ export const experiences = [
 	},
 	{
 		id: 2,
-		title: 'Software Developer',
+		title: 'Software Engineer',
 		company_name: 'Rajasthan Patrika',
 		icon: patrikaLogo,
 		iconBg: '#f9e79f',
